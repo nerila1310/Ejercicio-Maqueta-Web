@@ -1,0 +1,360 @@
+/*Importamos Fuentes para la pàgina*/
+@font-face{
+	font-family: "SerifProSemiBold";
+	src: url("fonts/SerifProSemiBold.ttf");
+}
+
+body{
+    margin: 0px;
+    font-family: SerifProSemiBold;
+}
+
+header .contenedor{
+    display: flex;
+    justify-content: space-between;
+}
+
+header ul{
+    display: flex;
+}
+
+header ul li{
+    list-style: none; /*Quita el punto de la lista del menu*/
+    margin-left: 15px;
+}
+
+.logo a{
+    text-decoration: none;
+    color: #fff;
+}
+
+a{
+    text-decoration: none;
+}
+
+.contenedor{
+    max-width: 1280px;
+    width: 90%;
+    margin: auto;
+}
+
+header{
+    background: linear-gradient(rgba(84, 93, 220, 0.8),rgba(96, 171, 245, 0.8)) ,url(image/fondo.jpg);
+    height: 100vh;
+    background-size: cover;
+}
+
+#contenedor-titulo-flex{
+    max-width: 1580px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 18vh 0; /* es lo equivalente a los de abajo*/
+    /*
+    margin-top: 18vh;
+    margin-right: 0px;
+    margin-bottom: 18vh;
+    margin-left: 0px;
+    */
+}
+
+h1{
+    font-size: 60px;
+    color: #fff;
+    margin: 0px;
+}
+
+h2{
+    font-size: 25;
+    color: #fff;
+}
+
+.contenedor-titulo{
+    text-align: center;
+}
+
+.contenedor-titulo a,
+#sobre-mi a,
+#blog a,
+#que-esperas a,
+#contacto input[type="submit"]{
+    font-size: 14px;
+    color: #fff;
+    background: #5cb8ff;
+    padding: 14px 24px;/*
+                        padding-top: 18vh;
+                        padding-right: 0px;
+                        padding-bottom: 18vh;
+                        padding-left: 0px;*/
+    width: 128px;
+    display: inline-block;
+}
+
+p.logo{
+    color: #fff;
+    font-size: 20px;
+}
+
+
+nav ul li a{
+    color: #fff;
+}
+
+
+/*Seccion sobre mi*/
+
+h3{
+    text-align: center;
+    font-size: 55px;
+    font-weight: normal;
+}
+
+#sobre-mi .contenedor-sobremi{
+    display: flex;
+    justify-content: space-around;
+}
+
+#sobre-mi .texto{
+    width: 42%;
+    text-align: justify;
+}
+#sobre-mi #imag{
+    width: 500px;
+    height: 500px;
+}
+
+
+/* Seccion Servicios*/
+#servicio p{
+    text-align: justify;
+}
+
+.contenedor-servicios{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    color: #fff;
+}
+
+.servicio{
+    width: 24%;
+    padding: 34px 30px 38px 30px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.servicio h4{
+    font-size: 30px;
+    margin: 0px;
+}
+
+.servicio p{
+    margin-bottom: 20px;
+    height: 194px;
+}
+
+.contenedor-servicios .violeta {
+    background: linear-gradient(to top, #5055df, #6d68f3);
+    box-shadow: 0 12px 30px 0 rgba(80, 85, 223, .37);
+}
+.contenedor-servicios .celeste {
+    background: linear-gradient(to top, #40a8f9, #5cb8ff);
+    box-shadow: 0 12px 30px 0 rgba(86, 163, 222, .3);
+}
+
+.ondas{
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+
+.icono{
+    float: right;
+}
+
+/*Mis Trabajos*/
+
+button.owl-prev, button.owl-next {
+    color: inherit;
+    font: inherit;
+        font-size: inherit;
+    font-size: 40px !important;
+}
+
+span{
+    color: #71bcfa;
+}
+
+/*Seccion Trabajar conmigo*/
+
+.contenedor-trabajar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#por-que-trabajar .item{
+    width: 28%;
+    text-align: center;
+}
+
+#por-que-trabajar ul li{
+    list-style: none;
+}
+
+#por-que-trabajar ul li:nth-child(2){
+    font-weight: bold;
+    font-size: 19px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#por-que-trabajar ul li:nth-child(3){
+    line-height: 31px;
+    text-align: justify;
+}
+
+/* Section Asterisco barra*/
+
+#blog .contenedor-publicacion{
+    display: flex;
+    justify-content: space-around;
+}
+
+#blog .publicacion{
+    width: 30%;
+    box-shadow: 1px 1px 14px #ccc;
+}
+
+#blog img{
+    width: 100%;
+}
+
+#blog .contenido{
+    background: #fff;
+    padding: 20px;
+}
+
+#blog h4{
+    font-size: 23px;
+    margin:0px;
+    margin-bottom: 15px;
+}
+
+#blog p{
+    color: #5a6169;
+    line-height: 24px;
+    font-size: 16px;
+    text-align: justify;
+}
+#blog a{
+    width: 87px;
+}
+ /*Seccion que esperas*/
+
+#que-esperas{
+    background: linear-gradient(rgba(84, 93, 220, 0.94),rgba(96, 171, 245, 0.9));
+    text-align: center;
+    padding: 50px 0;
+    margin-top: 40px;
+}
+
+#que-esperas h3{
+    font-size: 23px;
+    color: #fff;
+}
+
+/* Contacto */
+
+#contacto form{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 77%;
+    margin: auto;
+}
+
+input[type="text"],input[type="email"]{
+    width: 48%;
+    margin-bottom: 15px;
+    padding: 18px 0px;
+    border: 0px;
+    border-bottom: 2px solid #5cb8ff;
+    font-size: 17px;
+}
+
+textarea{
+    padding: 18px;
+    border: 0px;
+    border-bottom: 2px solid #5cb8ff;
+    font-size: 17px;
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+#contacto input[type="submit"]{
+    width: 166px;
+    margin: auto;
+}
+
+.contacto-info{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+.contacto-info img{
+    width: 28px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+footer{
+    background: #2F2F2F;
+    padding: 40px 0px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+footer .contenedor{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+footer img{
+    margin: 0 40px;
+    transform: rotate(0);
+    transition: 0.4s;
+}
+
+footer img:hover{
+    transform: rotate(360deg);
+    transition: 0.4s;
+}
+
+footer p{
+    color: #fff;
+    margin-top: 40px;
+}
+
+#whatsapp{
+    position: fixed;
+    top: 85%;
+    right: 1%;
+    z-index: 50;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+#sobre-mi,
+#servicio,
+#por-que-trabajar,
+#mis-trabajos,
+#blog,
+#contacto{
+    padding: 20px 0;
+}
